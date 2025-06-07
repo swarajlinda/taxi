@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-	<title>Novaride - Car Rental HTML Template</title>
+	<title>GoJharkhandTaxiDrivingSchool</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -35,6 +35,41 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
+  <style>
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+      50% {
+        box-shadow: 0 0 12px #ffcc00;
+      }
+      100% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+    }
+  </style>
+  <style>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+    <style>
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
 <body>
 
     <!-- Preloader Start -->
@@ -52,17 +87,31 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
-					</a>
+				 <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
 					<!-- Logo End -->
 
 					<!-- Main Menu Start -->
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
+                                <li><a class="nav-link" href="index.html">Home</a>
+                                    <!-- <ul>
                                         <li class="nav-item submenu"><a class="nav-link" href="index-2.html">Home - Light</a>
                                             <ul>    
                                                 <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Background Image</a></li>
@@ -77,18 +126,18 @@
                                                 <li class="nav-item"><a class="nav-link" href="https://html.awaikenthemes.com/novaride/dark/index-3.html">Home - Background Slider</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Cars</a>
+                                <!-- <li><a class="nav-link" href="#">Cars</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="cars.html">Car Lists</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-single.html">Car Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-type.html">Cars Type</a></li>
                                     </ul>
-                                </li>                               
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                </li>                                -->
+                                <!-- <li><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -102,7 +151,7 @@
                                         <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ's</a></li>                                        
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -129,12 +178,12 @@
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
 						<h1 class="text-anime-style-3" data-cursor="-opaque">Our Services</h1>
-						<nav class="wow fadeInUp">
+						<!-- <nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
 								<li class="breadcrumb-item active" aria-current="page">services</li>
 							</ol>
-						</nav>
+						</nav> -->
 					</div>
 					<!-- Page Header Box End -->
 				</div>
@@ -154,8 +203,8 @@
                             <img src="images/icon-service-1.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>car rental with driver</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>Outstation Rental</h3>
+                            <p>Need a car for the entire day or longer for outstation use? Our Outstation Rental service provides well-maintained vehicles with experienced drivers for multi-day or long-distance travel plans.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -171,8 +220,8 @@
                             <img src="images/icon-service-2.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>business car rental</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>Outstation Rides</h3>
+                            <p>Travel beyond Ranchi with ease and comfort. Book our taxis for intercity or outstation journeys with flexible routes and transparent pricing. Ideal for family trips, business travel, or visiting relatives in nearby cities.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -188,8 +237,9 @@
                             <img src="images/icon-service-3.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>airport transfer</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>
+5. Airport, Railway Station & Bus Stand Transfers</h3>
+                            <p>On-time pickups and drops to and from Birsa Munda Airport, Ranchi Railway Station, and Bus Stations. Whether you're arriving or departing, we ensure a stress-free experience.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -205,8 +255,8 @@
                             <img src="images/icon-service-4.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>chauffeur services</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>Local Rental</h3>
+                            <p>Explore Ranchi hassle-free! Our Local Rental service offers cars on an hourly or full-day basis within the city—perfect for shopping, meetings, or casual outings.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -222,8 +272,8 @@
                             <img src="images/icon-service-5.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>private transfer</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>One-Way Taxi</h3>
+                            <p>Looking for a convenient ride from one city to another without the return cost? Our One-Way Taxi service allows you to pay for just one side of the journey, saving money and time.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -239,8 +289,9 @@
                             <img src="images/icon-service-6.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>VIP transfer</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>Driving School (Car, Scooty & Bike)</h3>
+                            <p>Learn to drive confidently with certified instructors and personalized coaching. We offer training for cars, scooters (scooty), and bikes, catering to both beginners and refresher learners.
+</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -256,8 +307,8 @@
                             <img src="images/icon-service-7.svg" alt="">
                         </div>
                         <div class="service-content">
-                            <h3>roadside assistance</h3>
-                            <p>Enhance your rental experience with additional options.</p>
+                            <h3>Driving Licence Assistance</h3>
+                            <p>Once your training is complete, we help you through every step of the process to obtain your driving licence—making the journey from learner to licensed driver smooth and simple.</p>
                         </div>
                         <div class="service-footer">
                             <a href="#" class="section-icon-btn"><img src="images/arrow-white.svg" alt=""></a>
@@ -288,239 +339,12 @@
     <!-- Page Services Section End -->
 
     <!-- Exclusive Partners Section Start -->
-    <div class="exclusive-partners bg-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">executive partners</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Trusted by leading brands</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
+  
 
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/icon-partners-1.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/icon-partners-2.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="images/icon-partners-3.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="images/icon-partners-4.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1s">
-                        <img src="images/icon-partners-3.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.2s">
-                        <img src="images/icon-partners-4.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.4s">
-                        <img src="images/icon-partners-1.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.6s">
-                        <img src="images/icon-partners-2.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Exclusive Partners Section End -->
 
     <!-- Our Testiminial Start -->
-    <div class="our-testimonial">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">testimonials</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">What our customers are saying about us</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Testimonial Slider Start -->
-                    <div class="testimonial-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper" data-cursor-text="Drag">
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-1.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>floyd miles</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-                                 
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-2.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>annette black</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-3.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>leslie alexander</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-4.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>alis white</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-                            </div>
-                            <div class="testimonial-btn">
-                                <div class="testimonial-button-prev"></div>
-				                <div class="testimonial-button-next"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial Slider End -->
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Our Testiminial End -->
 
     <!-- Footer Start -->
@@ -532,14 +356,47 @@
                      <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                              <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
-                         <div class="about-footer-content">
-                            <p>Experience the ease and convenience of renting a car with Novaride. </p>
-                         </div>
+                        <div class="about-footer-content">
+  <p>
+    Experience the ease and convenience of renting a car with 
+    <span style="
+      font-weight: bold;
+      font-size: 1.1em;
+      background: linear-gradient(90deg, #FFD700, #FFEA00, #FFC107);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      animation: fadeSlideIn 1.2s ease-in-out;
+      text-shadow: 0 0 6px rgba(255, 234, 0, 0.6);
+    ">
+      GoJharkhandTaxiDrivingSchool
+      <img src="images/taxi-svgrepo-com.svg" alt="Taxi Icon" style="width: 20px; height: 20px;">
+    </span>.
+  </p>
+</div>
                         <!-- About Footer Content End -->
                      </div>
                     <!-- About Footer End -->
@@ -598,7 +455,8 @@
                     <div class="col-lg-6 col-md-7">
                         <!-- Footer Copyright Start -->
                         <div class="footer-copyright-text">
-                            <p>© 2024 Novaride. All rights reserved.</p>
+                <p>© 2025 GoJharkhandTaxiDrivingSchool. All rights reserved.</p>
+
                         </div>
                         <!-- Footer Copyright End -->
                     </div>

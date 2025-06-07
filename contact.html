@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-	<title>Novaride - Car Rental HTML Template</title>
+	<title>GoJharkhandTaxiDrivingSchool</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -35,15 +35,99 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
+ <style>
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+      50% {
+        box-shadow: 0 0 12px #ffcc00;
+      }
+      100% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+    }
+  </style>
+  <style>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+      <style>
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
+ <div
+      class="preloader"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        class="loading-container"
+        style="position: relative; width: 150px; height: 150px"
+      >
+        <!-- Round border with animation -->
+        <div
+          class="loading"
+          style="
+            width: 100%;
+            height: 100%;
+            border: 8px solid #ffffff;
+            border-top: 8px solid #000000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+          "
+        ></div>
+
+        <!-- Icon inside -->
+        <div
+          id="loading-icon"
+          style="
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        >
+          <img
+            src="images/taxi-svgrepo-com.svg"
+            alt="Taxi"
+            style="width: 500%; height: 100%"
+          />
+        </div>
+      </div>
+    </div>
 	<!-- Preloader End -->
 
     <!-- Header Start -->
@@ -52,17 +136,31 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
-					</a>
+					  <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
 					<!-- Logo End -->
 
 					<!-- Main Menu Start -->
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
+                                <li ><a class="nav-link" href="index.html">Home</a>
+                                    <!-- <ul>
                                         <li class="nav-item submenu"><a class="nav-link" href="index-2.html">Home - Light</a>
                                             <ul>    
                                                 <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Background Image</a></li>
@@ -77,18 +175,18 @@
                                                 <li class="nav-item"><a class="nav-link" href="https://html.awaikenthemes.com/novaride/dark/index-3.html">Home - Background Slider</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Cars</a>
+                                <!-- <li ><a class="nav-link" href="#">Cars</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="cars.html">Car Lists</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-single.html">Car Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-type.html">Cars Type</a></li>
                                     </ul>
-                                </li>                               
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                </li>                                -->
+                                <!-- <li ><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -102,7 +200,7 @@
                                         <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ's</a></li>                                        
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -129,12 +227,7 @@
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
 						<h1 class="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
-						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">contact us</li>
-							</ol>
-						</nav>
+						
 					</div>
 					<!-- Page Header Box End -->
 				</div>
@@ -170,7 +263,8 @@
     
                                     <!-- Contact Info Content Start -->
                                     <div class="contact-info-content">
-                                        <p>(+01) 789 854 856</p>
+                                        <p>+917461989994</p>
+                                        <p>+919693209574</p>
                                     </div>
                                     <!-- Contact Info Content End -->
                                 </div>
@@ -186,7 +280,7 @@
     
                                     <!-- Contact Info Content Start -->
                                     <div class="contact-info-content">
-                                        <p>info@domain.com</p>
+                                        <p>gojharkhandcabs@gmail.com</p>
                                     </div>
                                     <!-- Contact Info Content End -->
                                 </div>
@@ -202,7 +296,7 @@
     
                                     <!-- Contact Info Content Start -->
                                     <div class="contact-info-content">
-                                        <p>1234 Elm Street, Suite 567 Springfield, United States</p>
+                                        <p>S/O Nilu Razak,NeelKant Apartment,Birsachowk,834003</p>
                                     </div>
                                     <!-- Contact Info Content End -->
                                 </div>
@@ -293,7 +387,7 @@
                 <div class="col-lg-12">
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.596988836016!2d85.30543237521066!3d23.31905540519929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e02ea51304bd%3A0xa10922927c3b08e1!2sNeelkanth%20Apartment!5e1!3m2!1sen!2sin!4v1749292172279!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
                 </div>
@@ -311,13 +405,48 @@
                      <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                             <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
                          <div class="about-footer-content">
-                            <p>Experience the ease and convenience of renting a car with Novaride. </p>
+                          <div class="about-footer-content">
+  <p>
+    Experience the ease and convenience of renting a car with 
+    <span style="
+      font-weight: bold;
+      font-size: 1.1em;
+      background: linear-gradient(90deg, #FFD700, #FFEA00, #FFC107);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      animation: fadeSlideIn 1.2s ease-in-out;
+      text-shadow: 0 0 6px rgba(255, 234, 0, 0.6);
+    ">
+      GoJharkhandTaxiDrivingSchool
+      <img src="images/taxi-svgrepo-com.svg" alt="Taxi Icon" style="width: 20px; height: 20px;">
+    </span>.
+  </p>
+</div>
                          </div>
                         <!-- About Footer Content End -->
                      </div>
@@ -377,7 +506,8 @@
                     <div class="col-lg-6 col-md-7">
                         <!-- Footer Copyright Start -->
                         <div class="footer-copyright-text">
-                            <p>© 2024 Novaride. All rights reserved.</p>
+                        <p>© 2025 GoJharkhandTaxiDrivingSchool. All rights reserved.</p>
+
                         </div>
                         <!-- Footer Copyright End -->
                     </div>

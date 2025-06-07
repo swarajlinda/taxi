@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-	<title>Novaride - Car Rental HTML Template</title>
+	<title>GoJharkhandTaxiDrivingSchool</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -35,15 +35,99 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
+  <style>
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+      50% {
+        box-shadow: 0 0 12px #ffcc00;
+      }
+      100% {
+        box-shadow: 0 0 0px #ffcc00;
+      }
+    }
+  </style>
+  <style>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+    <style>
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
+	    <div
+      class="preloader"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        class="loading-container"
+        style="position: relative; width: 150px; height: 150px"
+      >
+        <!-- Round border with animation -->
+        <div
+          class="loading"
+          style="
+            width: 100%;
+            height: 100%;
+            border: 8px solid #ffffff;
+            border-top: 8px solid #000000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+          "
+        ></div>
+
+        <!-- Icon inside -->
+        <div
+          id="loading-icon"
+          style="
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        >
+          <img
+            src="images/taxi-svgrepo-com.svg"
+            alt="Taxi"
+            style="width: 500%; height: 100%"
+          />
+        </div>
+      </div>
+    </div>
 	<!-- Preloader End -->
 
     <!-- Header Start -->
@@ -52,17 +136,31 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
-					</a>
+					         <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
 					<!-- Logo End -->
 
 					<!-- Main Menu Start -->
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
+                                <li ><a class="nav-link" href="index.html">Home</a>
+                                    <!-- <ul>
                                         <li class="nav-item submenu"><a class="nav-link" href="index-2.html">Home - Light</a>
                                             <ul>    
                                                 <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Background Image</a></li>
@@ -77,18 +175,18 @@
                                                 <li class="nav-item"><a class="nav-link" href="https://html.awaikenthemes.com/novaride/dark/index-3.html">Home - Background Slider</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Cars</a>
+                                <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Cars</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="cars.html">Car Lists</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-single.html">Car Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="car-type.html">Cars Type</a></li>
                                     </ul>
-                                </li>                               
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                </li>                                -->
+                                <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -102,7 +200,7 @@
                                         <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ's</a></li>                                        
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -129,12 +227,12 @@
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
 						<h1 class="text-anime-style-3" data-cursor="-opaque">About Us</h1>
-						<nav class="wow fadeInUp">
+						<!-- <nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
 								<li class="breadcrumb-item active" aria-current="page">about us</li>
 							</ol>
-						</nav>
+						</nav> -->
 					</div>
 					<!-- Page Header Box End -->
 				</div>
@@ -153,7 +251,7 @@
                         <!-- About Image Start -->
                         <div class="about-img-1">
                             <figure class="reveal">
-                                <img src="images/about-img-1.jpg" alt="">
+                                <img src="images/taxi2.jpg" alt="">
                             </figure>
                         </div>
                         <!-- About Image End -->
@@ -161,7 +259,7 @@
                         <!-- About Image Start -->
                         <div class="about-img-2">
                             <figure class="reveal">
-                                <img src="images/about-img-2.jpg" alt="">
+                                <img src="images/taxi3.jpg" alt="">
                             </figure>
                         </div>
                         <!-- About Image End -->
@@ -175,8 +273,11 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your trusted partner in reliable car rental</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Aqestic Optio Amet A Ququam Saepe Aliquid Voluate Dicta Fuga Dolor Saerror Sed Earum A Magni Soluta Quam Minus Dolor Dolor</p>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Welcome to 'GOJHARKHAND TAXI & DRIVING SCHOOL'</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Book a Taxi Or learn how to drive - One stop for jharkhand roads. Your Trusted Partner for Safe Journeys & Confident Driving – Based in Ranchi, Jharkhand</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">At GOJHARKHAND TAXI & DRIVING SCHOOL, we pride ourselves on delivering reliable, affordable, and customer-friendly transport and driver training services across Ranchi and surrounding areas. Whether you're planning a comfortable outstation trip, need a quick ride across town, or looking to become a confident and licensed driver, we're here for you—every step (and drive) of the way.
+</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Driven by a passion for excellence and community care, we aim to make every ride safe, every learner skilled, and every customer satisfied. From pickups and drops to driving classes and licensing support, you’ll always find GOJHARKHAND by your side.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -216,90 +317,11 @@
     <!-- Page About Us Section End -->
 
     <!-- Exclusive Partners Section Start -->
-    <div class="exclusive-partners bg-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">executive partners</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Trusted by leading brands</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/icon-partners-1.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/icon-partners-2.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="images/icon-partners-3.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="images/icon-partners-4.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1s">
-                        <img src="images/icon-partners-3.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.2s">
-                        <img src="images/icon-partners-4.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.4s">
-                        <img src="images/icon-partners-1.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <!-- Partners Logo Start -->
-                    <div class="partners-logo wow fadeInUp" data-wow-delay="1.6s">
-                        <img src="images/icon-partners-2.svg" alt="">
-                    </div>
-                    <!-- Partners Logo End -->
-                </div>
-            </div>
-        </div>
-    </div>
+ 
     <!-- Exclusive Partners Section End -->
 
     <!-- Vision Mission Section Start -->
-    <div class="vision-mission">
+    <div class="our-team bg-section">
         <div class="container">
             <div class="row section-row">
                 <div class="col-lg-12">
@@ -457,78 +479,15 @@
             </div>
         </div>
     </div>
+    <br> <br>
     <!-- Vision Mission Section End -->
 
     <!-- Our Video Section Start -->
-    <div class="our-video bg-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">watch our video</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Discover what sets us apart in the car rental industry</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <!-- Customer Counter Item Start -->
-                    <div class="customer-counter-item">
-                        <!-- Customer Counter Image Start -->
-                        <div class="customer-counter-image">
-                            <img src="images/video-counter-img-1.jpg" alt="">
-                        </div>
-                        <!-- Customer Counter Image End -->
-
-                        <!-- Satisfied Customer Counter Start -->
-                        <div class="satisfied-customer-counter">
-                            <h3><span class="counter">3100</span>+</h3>
-                            <p>satisfied customer</p>
-                        </div>
-                        <!-- Satisfied Customer Counter End -->
-
-                        <!-- Satisfied Customer Image Start -->
-                        <div class="satisfied-customer-image">
-                            <img src="images/satisfied-customer-img.png" alt="">
-                        </div>
-                        <!-- Satisfied Customer Image End -->
-                    </div>
-                    <!-- Customer Counter Item End -->
-                </div>
-
-                <div class="col-lg-8 col-md-7">
-                    <!-- Video Image Box Start -->
-                    <div class="video-image-box">
-                        <!-- Video Image Start -->
-                        <div class="video-image" data-cursor-text="Play">
-                            <figure>
-                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-                                    <img src="images/video-counter-img-2.jpg" alt="">
-                                </a>                                
-                            </figure>
-                        </div>
-                        <!-- Video Image End -->
-
-                        <!-- Video Image Play Button Start -->
-                        <div class="video-image-play-button" data-cursor-text="Play">
-                            <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </div>
-                        <!-- Video Image Play Button End -->
-                    </div>
-                    <!-- Video Image Box End -->              
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!-- Our Video Section End -->
 
     <!-- Why Choose Us Section Start -->
-    <div class="why-choose-us">
+    <div class="our-team bg-section">
         <div class="container">
             <div class="row section-row">
                 <div class="col-lg-12">
@@ -605,7 +564,7 @@
         </div>
     </div>
     <!-- Why Choose Us Section End -->
-     
+     <br> <br>
     <!-- Our Team Start -->
     <div class="our-team bg-section">
         <div class="container">
@@ -620,290 +579,14 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <figure class="image-anime">
-                                <img src="images/team-1.jpg" alt="">
-                            </figure>
-                
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-                
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3>john smith</h3>
-                            <p>senior chauffeur</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <figure class="image-anime">
-                                <img src="images/team-2.jpg" alt="">
-                            </figure>
-                
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-                
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3>taylor smith</h3>
-                            <p>city tour guide</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <figure class="image-anime">
-                                <img src="images/team-3.jpg" alt="">
-                            </figure>
-                
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-                
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3>jordan brown</h3>
-                            <p>distance driver</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.75s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <figure class="image-anime">
-                                <img src="images/team-4.jpg" alt="">
-                            </figure>
-                
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-                
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3>davis casey</h3>
-                            <p>travel specialist</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
-                </div>
-            </div>
+        
         </div>
     </div>
+    <br> <br>
     <!-- Our Team End -->
 
     <!-- Our Testiminial Start -->
-    <div class="our-testimonial">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">testimonials</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">What our customers are saying about us</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Testimonial Slider Start -->
-                    <div class="testimonial-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper" data-cursor-text="Drag">
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-1.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>floyd miles</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-                                 
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-2.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>annette black</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-3.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>leslie alexander</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.</p>								
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-4.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>alis white</h3>
-                                                <p>project manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-                            </div>
-                            <div class="testimonial-btn">
-                                <div class="testimonial-button-prev"></div>
-				                <div class="testimonial-button-next"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial Slider End -->
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!-- Our Testiminial End -->
 
     <!-- Footer Start -->
@@ -915,14 +598,47 @@
                      <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                            <a class="navbar-brand" href="index.html">
+              <p
+                style="
+                  display: inline-block;
+                  padding: 10px 16px;
+                  border: 2px solid #ffcc00;
+                  border-radius: 10px;
+                  color: #ffcc00;
+                  font-size: 20px;
+                  font-weight: bold;
+                  animation: glow 1.5s infinite ease-in-out;
+                  margin: 0;
+                "
+              >
+                GoJharkhandTaxiDrivingSchool
+              </p>
+            </a>
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
-                         <div class="about-footer-content">
-                            <p>Experience the ease and convenience of renting a car with Novaride. </p>
-                         </div>
+                        <div class="about-footer-content">
+  <p>
+    Experience the ease and convenience of renting a car with 
+    <span style="
+      font-weight: bold;
+      font-size: 1.1em;
+      background: linear-gradient(90deg, #FFD700, #FFEA00, #FFC107);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      animation: fadeSlideIn 1.2s ease-in-out;
+      text-shadow: 0 0 6px rgba(255, 234, 0, 0.6);
+    ">
+      GoJharkhandTaxiDrivingSchool
+      <img src="images/taxi-svgrepo-com.svg" alt="Taxi Icon" style="width: 20px; height: 20px;">
+    </span>.
+  </p>
+</div>
                         <!-- About Footer Content End -->
                      </div>
                     <!-- About Footer End -->
@@ -981,7 +697,7 @@
                     <div class="col-lg-6 col-md-7">
                         <!-- Footer Copyright Start -->
                         <div class="footer-copyright-text">
-                            <p>© 2024 Novaride. All rights reserved.</p>
+                            <p>© 2025 GoJharkhandTaxiDrivingSchool. All rights reserved.</p>
                         </div>
                         <!-- Footer Copyright End -->
                     </div>
